@@ -14,8 +14,76 @@
   --Fontsize: 16px;
 /* Font */
   --Fontfamily: 'Rubik', sans-serif;
-  --Weight1: 400;
-  --Weight2: 500;
-  --Weight3: 700;
-  --Weight4: 1000;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--Fontfamily);
+  font-size: var(--Fontsize);
+  list-style: none;
+}
+
+body{
+  background-color: var(--Lightgray);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.container{
+  background-color: var(--White);
+  width: 750px;
+  display: grid;
+  grid-template-columns: 40px auto;
+  padding: 25px;
+  gap: 25px;
+  border-radius: 6px;
+}
+
+.counter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 90px;
+  padding: 15px 0px;
+  border-radius: 8px;
+  background-color: var(--Verylightgray);
+}
+
+.topline{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  white-space: nowrap;
+
+}
+
+.leftside{
+  display: flex;
+  gap: 20px;
+}
+
+.rightside{
+  display: flex;
+  gap: 8px;
+}
+
+ul li, .reply{
+  color: var(--Moderateblue);
+}
+
+.time, .text p{
+  color: var(--GrayishBlue);
+}
+
+ul li, .reply, .user{
+  font-weight: 500;
+}
+
+.text p{
+  line-height: 24px;
 }
